@@ -50,23 +50,23 @@ At the end, I decided to recall Copyright back and registered Undisker as a trad
 - supports UDF
 - Vista compatibility
 - new protection system (Vista-compatible)
-- 
+ 
 ### Version 1.5 (September 2006)
 - supports NTFS
 - improved support for multisession CDs
 - CD/DVD recording functionality
-- 
+
 ## Version 1.4 (from beta testing program, no official information available)
 - New engine
 - support for multisession CDs
 - handle damaged CD/DVD volumes
 - Raw mode (no filesystem parsing)
-- 
+
 ## Version 1.3 (from beta testing program, no official information available)
 - Improved engine
 - multisession CDs
 - CD/DVD recording functionality
-- 
+
 ## Version 1.2 (September 2003)
 - Support for Unicode and SPTI
 - file associations
