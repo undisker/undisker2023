@@ -2,7 +2,7 @@
 
 *Below you can read the latest version rejected by Wiki community*
 
-Undisker is one of oldest [2] [3] [4] disk image tools for Microsoft Windows for data recovery and computer forensics purposes.
+Undisker is one of [oldest][2] [3] [4] disk image tools for Microsoft Windows for data recovery and computer forensics purposes.
 
 ## Features
 - Captures disk image from any storage media
@@ -27,11 +27,10 @@ Undisker is one of oldest [2] [3] [4] disk image tools for Microsoft Windows for
 - Supports NRG images (native format of Nero Burning ROM)
 
 ## Beta as tradition
-The latest public version (Undisker 2021) is officially declared as beta for historical reasons to celebrate the 25th anniversary of the very first version[5]
+The latest public version (Undisker 2021) is officially declared as beta for historical reasons to celebrate the 25th anniversary of the [very first version][5]
 
 ## UDSK format
-Undisker uses a proprietary format called UDSK. The format is proposed as universal disk image format, independent from storage type and with various compression support. 
-The file format specification is available publicly as Knowledge Base article on Undisker website.[6]
+Undisker uses a proprietary format called UDSK. The format is proposed as universal disk image format, independent from storage type and with various compression support. The file format specification is available publicly as [Knowledge Base article on Undisker website.][6]
 
 ## References
 - [1]: <https://www.undisker.com/25-years-of-undisker/> "25 years of Undisker. Undisker Technologies"
