@@ -34,7 +34,7 @@ Undisker uses a proprietary format called UDSK. The format is proposed as univer
 The file format specification is available publicly as Knowledge Base article on Undisker website.[6]
 
 ## References
-- [https://www.undisker.com/25-years-of-undisker/ "25 years of Undisker. Undisker Technologies"] [1]
+- [1] https://www.undisker.com/25-years-of-undisker/ "25 years of Undisker. Undisker Technologies"
 - [https://books.google.de/books?id=6f-9thpH_PcC&pg=PA155&dq=PC+Annoyances+undisker&hl=ru&sa=X&ved=2ahUKEwj0pKLkv6_vAhXM0qQKHRoLBfUQ6AEwAHoECAAQAg#v=onepage&q=PC%20Annoyances%20undisker&f=false "Bass, Steve (2003). PC Annoyances: How to Fix the Most Annoying Things about Your Personal Computer. O’Reilly Media. p. 155. ISBN 0-596-00593-8."] [2]
 - [https://link.springer.com/content/pdf/10.1007%2F978-1-4302-0027-7.pdf "Wolf, Chris; Halter, Erick M. (2005). Virtualization From the Desktop to the Enterprise. Apress Inc.. p. 89. ISBN 1-59059-495-9."] [3]
 - [https://books.google.de/books?id=PycbbbfIRdcC&pg=PA123&dq=undisker&hl=ru&sa=X&ved=2ahUKEwivxYTa7rHvAhUI-qQKHesdACoQ6AEwAXoECAIQAg#v=onepage&q=undisker&f=false "Bastiaansen, Rob (2005). Rob's Guide to Using VMware. Book4Brains. p. 123. ISBN 9080893439."] [4]
