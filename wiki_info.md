@@ -2,7 +2,7 @@
 
 *Below you can read the latest version rejected by Wiki community*
 
-Undisker is one of [oldest][2] [3] [4] disk image tools for Microsoft Windows for data recovery and computer forensics purposes.
+Undisker is one of oldest [2] [3] [4] disk image tools for Microsoft Windows for data recovery and computer forensics purposes.
 
 ## Features
 - Captures disk image from any storage media
@@ -27,13 +27,13 @@ Undisker is one of [oldest][2] [3] [4] disk image tools for Microsoft Windows fo
 - Supports NRG images (native format of Nero Burning ROM)
 
 ## Beta as tradition
-The latest public version (Undisker 2021) is officially declared as beta for historical reasons to celebrate the 25th anniversary of the [very first version][5]
+The latest public version (Undisker 2021) is officially declared as beta [5] for historical reasons to celebrate the 25th anniversary of the very first version [1]
 
 ## UDSK format
-Undisker uses a proprietary format called UDSK. The format is proposed as universal disk image format, independent from storage type and with various compression support. The file format specification is available publicly as [Knowledge Base article on Undisker website.][6]
+Undisker uses a proprietary format called UDSK. The format is proposed as universal disk image format, independent from storage type and with various compression support. The file format specification is available publicly as Knowledge Base article on Undisker website.[6]
 
 ## References
-- [1]: <https://www.undisker.com/25-years-of-undisker/> "25 years of Undisker. Undisker Technologies"
+- [1] [25 years of Undisker. Undisker Technologies] (https://www.undisker.com/25-years-of-undisker/) 
 - [2]: https://books.google.de/books?id=6f-9thpH_PcC&pg=PA155&dq=PC+Annoyances+undisker&hl=ru&sa=X&ved=2ahUKEwj0pKLkv6_vAhXM0qQKHRoLBfUQ6AEwAHoECAAQAg#v=onepage&q=PC%20Annoyances%20undisker&f=false "Bass, Steve (2003). PC Annoyances: How to Fix the Most Annoying Things about Your Personal Computer. O’Reilly Media. p. 155. ISBN 0-596-00593-8."
 - [3]: https://link.springer.com/content/pdf/10.1007%2F978-1-4302-0027-7.pdf "Wolf, Chris; Halter, Erick M. (2005). Virtualization From the Desktop to the Enterprise. Apress Inc.. p. 89. ISBN 1-59059-495-9."
 - [https://books.google.de/books?id=PycbbbfIRdcC&pg=PA123&dq=undisker&hl=ru&sa=X&ved=2ahUKEwivxYTa7rHvAhUI-qQKHesdACoQ6AEwAXoECAIQAg#v=onepage&q=undisker&f=false "Bastiaansen, Rob (2005). Rob's Guide to Using VMware. Book4Brains. p. 123. ISBN 9080893439."] [4]
