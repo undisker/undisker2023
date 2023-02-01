@@ -38,6 +38,6 @@ Undisker uses a proprietary format called UDSK. The format is proposed as univer
 3. [Wolf, Chris; Halter, Erick M. (2005). Virtualization From the Desktop to the Enterprise. Apress Inc.. p. 89. ISBN 1-59059-495-9.](https://link.springer.com/content/pdf/10.1007%2F978-1-4302-0027-7.pdf) 
 4. [Bastiaansen, Rob (2005). Rob's Guide to Using VMware. Book4Brains. p. 123. ISBN 9080893439](https://books.google.de/books?id=PycbbbfIRdcC&pg=PA123&dq=undisker&hl=ru&sa=X&ved=2ahUKEwivxYTa7rHvAhUI-qQKHesdACoQ6AEwAXoECAIQAg#v=onepage&q=undisker&f=false) 
 5. [Undisker Beta Release Notes. Undisker Technologies](https://www.undisker.com/beta)
-6. [UDSK Format Specification". Undisker Technologies. 2021-03-11)(https://www.undisker.com/articles/udsk-specification/)
+6. [UDSK Format Specification". Undisker Technologies. 2021-03-11](https://www.undisker.com/articles/udsk-specification/)
 7. [Legacy Undisker for DOS, distributed over FIDONet (Russian abandonware)](http://old-dos.ru/index.php?page=files&mode=files&do=show&id=4559)
 8. [Original Wikipedia article about Undisker (2006-2009, archived)](https://web.archive.org/web/20080527094139/https://en.wikipedia.org/wiki/undisker)
