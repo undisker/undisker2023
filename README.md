@@ -1,4 +1,4 @@
-# Undisker 2023 (Ethernal Beta) - Free Edition
+# Undisker 2023 (Eternal Beta) - Free Edition
 
 I finally decided to **stop supporting Undisker after 1. January 2023**.
 
