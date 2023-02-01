@@ -7,5 +7,4 @@ Looks like the time of physical media is over in favor of much easily controllab
 It was a good time last 27 years, but now it's just time to stop. I want to thank all Undisker users and developers ever participated in this project.
 
 Yours,
-
 Oleg Akopov
