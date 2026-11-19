@@ -14,7 +14,7 @@ any case, inside identifiers, paths and URLs, and split by punctuation.
 Exit status 1 if a name is found. To add a name, append its hash and length
 to FORBIDDEN; never write the name itself into this repository.
 """
-import hashlib, subprocess, sys
+import hashlib, re, subprocess, sys
 
 FORBIDDEN = [
     (6, "18097b758252dcbe27d6e30ed2c72add9da1d0e4b7ff09f908dd295ceb877407"),
@@ -25,14 +25,24 @@ def _letters(text):
     return "".join(ch for ch in text.lower() if "a" <= ch <= "z")
 
 
-def find(text):
-    s = _letters(text)
+def _windows(s, length):
+    for i in range(len(s) - length + 1):
+        yield s[i:i + length]
+
+
+def find(text, binary=False):
+    """Text is reduced to its letters, so a name split by punctuation is
+    still found. In binary data that would join random bytes into words, so
+    there only unbroken runs of letters are searched."""
     hits = []
+    if binary:
+        runs = re.findall(r"[a-z]+", text.lower())
+    else:
+        runs = [_letters(text)]
     for length, digest in FORBIDDEN:
-        for i in range(len(s) - length + 1):
-            if hashlib.sha256(s[i:i + length].encode()).hexdigest() == digest:
-                hits.append(length)
-                break
+        if any(hashlib.sha256(w.encode()).hexdigest() == digest
+               for run in runs for w in _windows(run, length)):
+            hits.append(length)
     return hits
 
 
@@ -52,11 +62,19 @@ def added_lines(diff):
     return out
 
 
+def added_text(diff):
+    """(path, text, is_binary) for every added line of a --text diff."""
+    out = []
+    for where, text in added_lines(diff):
+        out.append((where, text, "\0" in text))
+    return out
+
+
 def main(argv):
     found = []
     if not argv or argv[0] == "--staged":
-        for where, text in added_lines(git("diff", "--cached", "-U0", "--no-color", "--text")):
-            if find(text):
+        for where, text, binary in added_text(git("diff", "--cached", "-U0", "--no-color", "--text")):
+            if find(text, binary):
                 found.append("staged change in " + where)
     elif argv[0] == "--message":
         if find(open(argv[1], encoding="utf-8", errors="replace").read()):
@@ -66,8 +84,8 @@ def main(argv):
         for sha in git("rev-list", rng).split():
             if find(git("log", "-1", "--format=%B", sha)):
                 found.append("message of " + sha[:10])
-            for where, text in added_lines(git("show", "--format=", "-U0", "--no-color", "--text", sha)):
-                if find(text):
+            for where, text, binary in added_text(git("show", "--format=", "-U0", "--no-color", "--text", sha)):
+                if find(text, binary):
                     found.append("%s in %s" % (sha[:10], where))
     elif argv[0] == "--tree":
         for path in git("ls-files", "-z").split("\0"):
@@ -80,7 +98,7 @@ def main(argv):
                 data = open(path, "rb").read()
             except OSError:
                 continue
-            if find(data.decode("latin-1")):
+            if find(data.decode("latin-1"), binary=b"\0" in data[:8000]):
                 found.append(path)
     else:
         print(__doc__)
