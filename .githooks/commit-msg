@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python3 "$(git rev-parse --show-toplevel)/tools/name_guard.py" --message "$1"
